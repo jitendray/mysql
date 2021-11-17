@@ -20,6 +20,8 @@ I want to calculate difference between two consecutive rows and i need output fo
 
 Note: I want first value of diff and avg column to be 0 and rest is the difference.
 
+**SqlDump**: [Diff between consecutive rows in MySQL.sql](https://github.com/jitendray/mysql/blob/1f15ac7bff25c5a6e006ba73801b5149fac0f43f/sqldumps/Diff%20between%20consecutive%20rows%20in%20MySQL.sql)
+
 ### Solution
 
 For **MySQL 8** then use [Lag](https://dev.mysql.com/doc/refman/8.0/en/window-function-descriptions.html#function_lag) window function.
