@@ -1,4 +1,5 @@
-###Problem
+### Problem
+
 I have a table in mysql database this data.
     
     id  date         number   qty
@@ -19,7 +20,8 @@ I want to calculate difference between two consecutive rows and i need output fo
 
 Note: I want first value of diff and avg column to be 0 and rest is the difference.
 
-###Solution
+### Solution
+
 For **MySQL 8** then use [Lag](https://dev.mysql.com/doc/refman/8.0/en/window-function-descriptions.html#function_lag) window function.
 ```
 SELECT 
