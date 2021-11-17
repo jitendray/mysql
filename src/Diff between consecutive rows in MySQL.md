@@ -23,7 +23,7 @@ Note: I want first value of diff and avg column to be 0 and rest is the differen
 ### Solution
 
 For **MySQL 8** then use [Lag](https://dev.mysql.com/doc/refman/8.0/en/window-function-descriptions.html#function_lag) window function.
-```
+```sql
 SELECT 
     purchases.id, 
     purchases.date, 
