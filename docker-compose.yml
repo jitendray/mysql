@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  mysql8:
+    container_name: mysql8
+    image: mysql:8
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql8:/var/lib/mysql
+      - ./config/my.cnf:/etc/mysql/conf.d/my.cnf
+
+volumes:
+  mysql8:
+    driver: local
