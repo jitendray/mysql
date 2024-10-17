@@ -3,7 +3,7 @@ services:
   mysql8:
     container_name: mysql8
     image: mysql:8
-    restart: always
+    # restart: always
     env_file:
       - .env
     ports:
@@ -15,3 +15,7 @@ services:
 volumes:
   mysql8:
     driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/home/jitendrayadav/JitendraY/docker/volumes/mysql-8'
